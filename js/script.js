@@ -1,3 +1,7 @@
+/*
+2018 year
+ES5
+*/
 /*Game Customization*/
 var gameBlock = ".game",
     gameFiledBlock = ".game__field",
