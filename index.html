@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pure JS Arkanoid</title>
+  <meta name="description" content="Pure JS Arkanoid">
+  <meta name="keywords" content="Arkanoid, game, js, pure js, Seruf, CSS, HTML, Java Script">
+  <meta name="author" content="Seuf">
+  <meta name="copyright" content="(c)Seruf2020">
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="body">
+  <header class="page-header">
+    <div class="row">
+      <h1 class="heading heading--1">Pure JS Arkanoid v0.8.6.1</h1>
+    </div>
+  </header>
+  <main>
+    <div class="start-options">
+      <div class="row" style="">
+        <div class="row__col11">
+          <div class="info">
+            <p> The game is pretty simple. You have to destroy as many bricks as you can. </p>
+            <p>To move a pad use left/right (A/D) buttons. In order to stop the game just push "Esc".</p>
+            <p>So what are you waiting for? Type your name, a color and click <span class="text text--big">"PLAY!"</span> button!</p>
+            <div class="description">
+              <h4 class="heading heading--4 heading--center description__title">Check description here</h4>
+              <div class="description__content">
+                <p>You will earn 25 points for each brick hit as well as 750 points for each levelUP.</p>
+                <p>Some bricks include buffs and some debuffs. Avoid red blocks catching and try to catch green, as you will get debuff for each missed green block. By default, you have 3 live but you can catch more in green blocks as well as miss.</p>
+                <h5 class="heading heading--5 heading--center">Effects list</h5>
+                <div class="effects"></div>
+                <p>The result will be saved in your browser's local storage, so "Reset the results" feature means the storage clearing.</p>
+                <button class="button button--center reset-results-button">Reset results</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row__col11">
+          <h1 class="heading heading--1 heading__heading">Are you ready?</h1>
+        </div>
+        <div class="row__col12">
+          <label class="form__lable" for="">Name:</label>
+          <input class="form__input game__user-name" type="text" value="User">
+        </div>
+        <div class="row__col12">
+          <label class="form__lable" for="">Color:</label>
+          <input class="form__input game__user-color" type="text" value="green">
+        </div>
+        <div class="row__col11">
+          <button class="button button--center play-button">Play!</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row__col11">
+          <div class="results">
+          <h2 class="heading heading--2 heading__heading">Best results</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="game">
+      <canvas class="game__field" width="560" height="480"></canvas>
+      <canvas class="game__menu" width="222" height="480"></canvas>
+      <div class="row row--around row--game">
+        <button class="button pause-button">Pause Game</button>
+        <button class="button restar-button">Restart Game</button>
+      </div>
+
+    </div>
+    <template class="resultsTemplate">
+      <div class="results__item">
+        <div class="results__position">1</div>
+        <div class="results__name">--- </div>
+        <div class="results__score">--- </div>
+        <div class="results__bricks">--- </div>
+        <div class="results__level">---</div>
+      </div>
+    </template>
+    <template class="effectsTemplate">
+      <div class="effects__item">
+        <img width="60" height="60" src="" alt="" class="effects__img">
+        <div class="effects__description">
+          <h6 class="heading heading--6"></h6>
+          <p class="effects__text"></p>
+        </div>
+      </div>
+    </template>
+  </main>
+  <footer class="page-footer page-footer--preload">
+    <div class="row">
+      <p class="copyright">Copyright © 2020 Pure JS Arkanoid. Made By Seruf.</p>
+      <img srcset="img/logo-x2.png 2x, img/logo-x2.png 1.5x, img/logo.png 1x" src="img/logo.png" alt="logo" class="logo">
+      <p class="copyright">All trademarks and copyrights belong to their respective owners.</p>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

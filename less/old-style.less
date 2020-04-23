@@ -1,0 +1,492 @@
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-style: normal;
+  src: local('Poppins Light'), local('Poppins-Light'), url('../fonts/poppins-light.woff2') format('woff2'), url('../fonts/poppins-light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Poppins Bold'), local('Poppins-Bold'), url('../fonts/poppins-bold.woff2') format('woff2'), url('../fonts/poppins-bold.woff') format('woff');
+}
+/*Layouts*/
+/*Colors*/
+/*Fonts*/
+/*Other*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  background-color: #000000;
+  color: #13ff00;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #13ff00;
+}
+.button {
+  display: block;
+  padding: 10px 5px;
+  width: 150px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #13ff00;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px #13ff00 solid;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s;
+}
+.button:hover {
+  color: #000000;
+  background-color: #13ff00;
+}
+.button--center {
+  margin: 0 auto;
+}
+.row.row__calc {
+  margin-bottom: 20px;
+}
+.calculate {
+  margin-top: 40px;
+}
+.calc .heading {
+  display: none;
+}
+.calc .heading--active {
+  display: block;
+}
+.calc__option {
+  display: block;
+  padding: 10px 5px;
+  width: 150px;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: 'Poppins', sans-serif;
+  color: #13ff00;
+  text-align: center;
+  text-transform: uppercase;
+}
+.calc__button {
+  display: block;
+  padding: 10px 5px;
+  width: 150px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #13ff00;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px #13ff00 solid;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s;
+}
+.calc__button:hover {
+  color: #000000;
+  background-color: #13ff00;
+}
+.calc__button--active {
+  color: #000000;
+  background-color: #13ff00;
+  cursor: default;
+}
+.calc-result .row--calc {
+  display: none;
+}
+.calc-result .row--calc.calc--active {
+  display: flex;
+}
+.calc__code {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  font-family: monospace;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  border-radius: 5px;
+  border: 2px #009c0d solid;
+  background-color: #132e01;
+}
+.calc__code-hard {
+  display: none;
+}
+.calc__code--active {
+  display: block;
+}
+@media only screen and (max-width: 768px) {
+  .calc__button {
+    margin-bottom: 20px;
+  }
+  .calculate {
+    margin-top: 0px;
+  }
+}
+.copyright {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+.form__lable {
+  display: inline-block;
+  margin-right: 20px;
+  width: 90px;
+}
+.form__input {
+  width: 65%;
+  padding-left: 10px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #13ff00;
+  background-color: transparent;
+  border: 1px #06550c solid;
+  outline: none;
+  transition: all 0.5s;
+}
+.form__input--error {
+  border-color: #ff8282;
+}
+.form__input:hover {
+  border: 1px #13ff00 solid;
+}
+.form__input:focus {
+  border: 1px #13ff00 solid;
+}
+@media only screen and (max-width: 768px) {
+  .form__input {
+    margin-bottom: 20px;
+  }
+}
+.heading {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #13ff00;
+}
+.heading--1 {
+  width: 100%;
+  font-size: 44px;
+  line-height: 58px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.heading--3 {
+  width: 100%;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading--center {
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.page-footer {
+  padding: 20px 0;
+}
+.page-footer--preload {
+  margin-top: 40px;
+}
+@media only screen and (max-width: 1140px) {
+  .page-footer--preload {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .page-footer--preload {
+    margin-top: 50px;
+  }
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 1140px;
+  height: 100%;
+  text-align: center;
+}
+.row--calc div {
+  margin-bottom: 10px;
+  border: 2px #009c0d dashed;
+  height: 50px;
+}
+.row--calc span {
+  display: block;
+  width: 100%;
+}
+.row--around {
+  justify-content: space-around;
+}
+
+.row--game {
+  margin-top: 30px;
+  width: 790px;
+}
+
+.row__col11 {
+  width: 100%;
+}
+.row__col12 {
+  width: 48.65%;
+}
+.row__col13 {
+  width: 31.53%;
+}
+.row__col14 {
+  width: 22.97%;
+}
+.row__col23 {
+  width: 65.77%;
+}
+.row__col34 {
+  width: 74.32%;
+}
+/*Medium Calc*/
+.row__col25 {
+  width: 38.33%;
+}
+.row__col35 {
+  width: 58.92%;
+}
+.row__col15 {
+  width: 17.84%;
+}
+.row__col45 {
+  width: 79.46%;
+}
+@media only screen and (max-width: 1140px) {
+  .row,
+  .row--141214 .row__col12,
+  .row--141214 .row__col14,
+  .row--121414 .row__col12,
+  .row--141412 .row__col12 {
+    width: 100%;
+  }
+  .row--3414 .row__col14,
+  .row--3414 .row__col34,
+  .row--1434 .row__col14,
+  .row--1434 .row__col34,
+  .row--121414 .row__col14,
+  .row--141412 .row__col14 {
+    width: 48.65%;
+  }
+  /*Hard*/
+  .row__col15 {
+    width: 31.53%;
+  }
+  .row__col25,
+  .row__col35,
+  .row--151535 .row__col15,
+  .row--351515 .row__col15 {
+    width: 48.65%;
+  }
+  .row__col45 {
+    width: 65.77%;
+  }
+  .row--153515 .row__col35,
+  .row--153515 .row__col15,
+  .row--151535 .row__col35,
+  .row--351515 .row__col35 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .row__col12,
+  .row__col14,
+  .row__col13,
+  .row__col23,
+  .row--141214 .row__col14,
+  .row--141214 .row__col12,
+  .row--121414 .row__col14,
+  .row--141412 .row__col14,
+  .row--121414 .row__col12,
+  .row--141412 .row__col12,
+  .row--3414 .row__col14,
+  .row--3414 .row__col34,
+  .row--1434 .row__col14,
+  .row--1434 .row__col34 {
+    width: 100%;
+  }
+  /*hard*/
+  .row__col25,
+  .row__col35,
+  .row__col15,
+  .row__col45,
+  .row--151535 .row__col15,
+  .row--351515 .row__col15 {
+    width: 100%;
+  }
+}
+
+
+/*Arco*/
+.game {
+  display: none;
+  margin: 0 auto;
+  width: 790px;
+}
+
+.game--active {
+  display: block;
+}
+
+.game__field {
+  display: block;
+  float: left;
+  border-radius: 5px;
+  border: 2px #009c0d solid;
+  background-color: #132e01;
+}
+
+.heading__heading {
+  margin-bottom: 30px;
+}
+
+.play-button {
+  margin-top: 30px;
+}
+
+.start-options--disable {
+  display: none;
+}
+
+.results {
+  margin-top: 40px;
+}
+
+.results__item {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.results__item div {
+  float: left;
+  padding: 10px 0;
+}
+
+.results__position {
+  width: 10%;
+}
+
+.results__name {
+  width: 20%;
+}
+
+.results__score {
+  width: 30%;
+
+}
+
+.results__bricks {
+  width: 20%;
+}
+
+.results__level {
+  width: 20%;
+}
+
+.text--big {
+  font-size: 22px;
+  font-weight: 700px;
+}
+
+.effects {
+  margin-bottom: 60px;
+}
+
+.effects__item {
+  display: flex;
+  margin-top: 20px;
+
+}
+
+.effects__img {
+  margin-right: 20px;
+  padding: 5px;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #13ff00;
+  border-radius: 5px;
+}
+
+.effects__text {
+  margin: 0;
+  margin-top: 5px;
+}
+
+.heading--6 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.description {
+  overflow: hidden;
+}
+
+.description__title {
+  display: block;
+  margin: 0 auto;
+  width: 275px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.description__title:hover {
+  opacity: 0.5;
+}
+
+.description__content {
+  height: 0;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.open {
+  height: auto;
+  max-height: 10000px;
+  opacity: 1;
+  transition: all 0.5s;
+}

@@ -1,0 +1,31 @@
+.description {
+  overflow: hidden;
+}
+
+.description__title {
+  color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  width: 275px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.description__title:hover {
+  opacity: 0.5;
+}
+
+.description__content {
+  height: 0;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.description--open {
+  margin-top: 20px;
+  height: auto;
+  max-height: 10000px;
+  opacity: 1;
+  transition: all 0.5s;
+}
